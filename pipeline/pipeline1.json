@@ -46,7 +46,7 @@
 								"sink": {
 									"name": "Country",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -57,7 +57,8 @@
 								},
 								"sink": {
 									"name": "PcRbu",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -68,7 +69,8 @@
 								},
 								"sink": {
 									"name": "PriorityRating",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -78,8 +80,9 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "CommercialContractNo.",
-									"physicalType": "nvarchar"
+									"name": "CommercialContractNo",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -90,7 +93,8 @@
 								},
 								"sink": {
 									"name": "CommercialContract",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -101,7 +105,8 @@
 								},
 								"sink": {
 									"name": "CompanyCodeId",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -112,7 +117,8 @@
 								},
 								"sink": {
 									"name": "CompanyCode",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -123,7 +129,8 @@
 								},
 								"sink": {
 									"name": "ProjectDefinitionId",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -134,7 +141,8 @@
 								},
 								"sink": {
 									"name": "ProjectDefinition",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -145,7 +153,8 @@
 								},
 								"sink": {
 									"name": "SalesDocumentNo",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -156,8 +165,8 @@
 								},
 								"sink": {
 									"name": "Year",
-									"type": "String",
-									"physicalType": "nvarchar"
+									"type": "Int32",
+									"physicalType": "int"
 								}
 							},
 							{
@@ -168,7 +177,8 @@
 								},
 								"sink": {
 									"name": "ContractController",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -179,7 +189,8 @@
 								},
 								"sink": {
 									"name": "ContractAdmin",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -190,7 +201,8 @@
 								},
 								"sink": {
 									"name": "ProjectManager",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -200,8 +212,9 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "CEP",
-									"physicalType": "nvarchar"
+									"name": "Cep",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -212,7 +225,8 @@
 								},
 								"sink": {
 									"name": "IrisCode",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -223,7 +237,8 @@
 								},
 								"sink": {
 									"name": "FinalCustomerKey",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -234,7 +249,8 @@
 								},
 								"sink": {
 									"name": "FinalCustomer",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -245,7 +261,8 @@
 								},
 								"sink": {
 									"name": "FinalCustomerIndustry",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -255,8 +272,9 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Classified",
-									"physicalType": "nvarchar"
+									"name": "IsThisContractClassifiedSecret",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -266,8 +284,9 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ACM",
-									"physicalType": "nvarchar"
+									"name": "AcmContractSite",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -278,7 +297,8 @@
 								},
 								"sink": {
 									"name": "Validated",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -288,8 +308,9 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FailReason ",
-									"physicalType": "nvarchar"
+									"name": "FailReason",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -300,7 +321,8 @@
 								},
 								"sink": {
 									"name": "FailReasonNotes",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -311,7 +333,8 @@
 								},
 								"sink": {
 									"name": "CurrentOwner",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
@@ -322,40 +345,29 @@
 								},
 								"sink": {
 									"name": "CollectionSupportOwner",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
-								"source": {
-									"name": "UCC Project?",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "UccProject",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
-								"source": {
-									"name": "SharePoint Contract Site URL (Post-Migration)",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
-									"name": "SharePointContractSite URL (Post-Migration)",
-									"physicalType": "nvarchar"
+									"name": "SharePointContractSiteUrl",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
-								"source": {
-									"name": "Source File ",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "SourceFile",
-									"physicalType": "nvarchar"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							}
 						],
@@ -375,7 +387,11 @@
 				"outputs": [
 					{
 						"referenceName": "dbcarveout",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Schema": "Excel",
+							"Table": "RawContractMappingWorkbook"
+						}
 					}
 				]
 			}
