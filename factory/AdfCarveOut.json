@@ -1,0 +1,9 @@
+{
+	"name": "AdfCarveOut",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5cf635bc-8d04-432b-ac81-04ffcc53e01d",
+		"tenantId": "7688185f-f291-4395-a490-8e1c7debe8c3"
+	}
+}
