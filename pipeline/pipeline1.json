@@ -1,0 +1,386 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings",
+							"skipLineCount": 2
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "PC RBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PcRbu",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Priority Rating",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PriorityRating",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Commercial Contract No.",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CommercialContractNo.",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Commercial Contract",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CommercialContract",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Company code ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CompanyCodeId",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Company code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CompanyCode",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Definition ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectDefinitionId",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Definition",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectDefinition",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Sales Document No.",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SalesDocumentNo",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Year",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Contract Controller",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractController",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Contract Admin",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractAdmin",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Manager",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectManager",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CEP (may be one of multiple)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CEP",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisCode",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Key",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerKey",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomer",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Industry",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerIndustry",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Is this contract classified / secret (Yes/No)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Classified",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ACM Contract Site (Only to be Completed When All Documents Uploaded)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ACM",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Validated? (Correct customer, signed, complete document)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Validated",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Fail Reason ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FailReason ",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Fail Reason Notes",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FailReasonNotes",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Current Owner (if validation was rejected)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CurrentOwner",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Collection Support Owner",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CollectionSupportOwner",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "UCC Project?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "UccProject",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SharePoint Contract Site URL (Post-Migration)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SharePointContractSite URL (Post-Migration)",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Source File ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SourceFile",
+									"physicalType": "nvarchar"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dbcarveout",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

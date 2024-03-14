@@ -1,0 +1,16 @@
+{
+	"name": "dbcarveout",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "@dataset().Schema",
+			"table": "@dataset().table"
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "20221003 CDL_UP_Contract Mapping Workbook_AM_Mexico_.csv",
+				"folderPath": "contractmappingworkbook",
+				"container": "bscarveout"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+				"type": "String"
+			}
+		]
+	}
+}
