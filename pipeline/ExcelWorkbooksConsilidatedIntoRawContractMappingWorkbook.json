@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "ExcelWorkbooksConsilidatedIntoRawContractMappingWorkbook",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "CopyExcelConsolidated",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -16,19 +16,16 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
+						"type": "ExcelSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings",
-							"skipLineCount": 2
 						}
 					},
 					"sink": {
 						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE [Excel].[RawContractMappingWorkbook]",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
 						"disableMetricsCollection": false
@@ -380,7 +377,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "ExcelWorrkbookConsolidated",
 						"type": "DatasetReference"
 					}
 				],

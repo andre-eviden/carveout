@@ -1,0 +1,18 @@
+{
+	"name": "ExcelWorrkbookConsolidated",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Tabelle1",
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			}
+		},
+		"schema": []
+	}
+}
