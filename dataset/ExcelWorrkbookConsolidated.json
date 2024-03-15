@@ -10,8 +10,12 @@
 		"typeProperties": {
 			"sheetName": "Tabelle1",
 			"location": {
-				"type": "AzureBlobStorageLocation"
-			}
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Workbooks_consilidated.xlsx",
+				"folderPath": "contractmappingworkbook",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
 		},
 		"schema": []
 	}
