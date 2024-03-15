@@ -36,6 +36,18 @@
 						"mappings": [
 							{
 								"source": {
+									"name": "UID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "UID",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
 									"name": "Country",
 									"type": "String",
 									"physicalType": "String"
@@ -84,7 +96,7 @@
 							},
 							{
 								"source": {
-									"name": "'Commercial Contract",
+									"name": "Commercial Contract",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -120,7 +132,7 @@
 							},
 							{
 								"source": {
-									"name": "Project Definition ID",
+									"name": "Country",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -132,7 +144,7 @@
 							},
 							{
 								"source": {
-									"name": "Project Definition",
+									"name": "Project Definition ID",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -144,7 +156,7 @@
 							},
 							{
 								"source": {
-									"name": "Sales Document No.",
+									"name": "Project Definition",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -168,7 +180,7 @@
 							},
 							{
 								"source": {
-									"name": "'Contract Controller",
+									"name": "Contract Controller",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -198,18 +210,6 @@
 								},
 								"sink": {
 									"name": "ProjectManager",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "CEP (may be one of multiple)",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Cep",
 									"type": "String",
 									"physicalType": "varchar"
 								}
@@ -300,7 +300,7 @@
 							},
 							{
 								"source": {
-									"name": "Fail Reason ",
+									"name": "Fail Reason",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -347,6 +347,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "UCC Project?",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "UccProject",
 									"type": "String",
@@ -354,15 +359,25 @@
 								}
 							},
 							{
+								"source": {
+									"name": "Source.Name",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
-									"name": "SharePointContractSiteUrl",
+									"name": "SourceFile",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
+								"source": {
+									"name": "Refresh Date",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
-									"name": "SourceFile",
+									"name": "RefreshDate",
 									"type": "String",
 									"physicalType": "varchar"
 								}
