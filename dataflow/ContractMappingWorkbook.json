@@ -1,0 +1,20 @@
+{
+	"name": "ContractMappingWorkbook",
+	"properties": {
+		"type": "WranglingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "MduPowerQuery",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~>  MduPowerQuery",
+					"dataset": {
+						"referenceName": "MduPowerQuery",
+						"type": "DatasetReference"
+					}
+				}
+			],
+			"script": "section Section1;\r\nshared MduPowerQuery = let AdfDoc = AzureStorage.BlobContents(\"https://sacarveout.blob.core.windows.net/bscarveout/powerquery/MDU Power Query.xlsx\"), Excel = Excel.Workbook(AdfDoc),ExcelSheet = Excel{[Item=\"Temp Sheet\",Kind=\"Sheet\"]}[Data], PromotedHeaders = Table.PromoteHeaders(ExcelSheet, [PromoteAllScalars = true]) in PromotedHeaders;\r\nshared UserQuery = let Source = #\"MduPowerQuery\" in Source;\r\n",
+			"documentLocale": "en-us"
+		}
+	}
+}
