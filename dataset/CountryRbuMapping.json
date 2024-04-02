@@ -1,0 +1,42 @@
+{
+	"name": "CountryRbuMapping",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionalworkbook"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Country-RBU Mapping",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "2024.03.28 Disposition Scenarios V120.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Country_Full",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "GBU",
+				"type": "String"
+			},
+			{
+				"name": "RBU",
+				"type": "String"
+			}
+		]
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"name": "Fy22Joost",
+	"name": "Fy2023",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -11,17 +11,38 @@
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
-			"sheetName": "FY22 Joost",
+			"sheetName": "FY23",
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "2024.03.28 Disposition Scenarios V120.xlsx",
 				"folderPath": "dispositionscenarios",
 				"container": "bscarveout"
 			},
-			"range": "",
+			"range": "B3:AN100000000",
 			"firstRowAsHeader": true
 		},
 		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
 			{
 				"type": "String"
 			},
