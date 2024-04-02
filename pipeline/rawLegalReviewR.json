@@ -1,9 +1,9 @@
 {
-	"name": "rawFy22Jost",
+	"name": "rawLegalReviewR",
 	"properties": {
 		"activities": [
 			{
-				"name": "CopyFy22Joost",
+				"name": "CopyLegalReviewR",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -428,7 +428,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Fy22Joost",
+						"referenceName": "LegalReviewR",
 						"type": "DatasetReference"
 					}
 				],
@@ -438,7 +438,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Schema": "excel",
-							"Table": "rawFy22Joost"
+							"Table": "rawLegalReviewR"
 						}
 					}
 				]

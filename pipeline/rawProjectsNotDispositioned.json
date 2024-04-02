@@ -1,9 +1,9 @@
 {
-	"name": "rawFy22Jost",
+	"name": "rawProjectsNotDispositioned",
 	"properties": {
 		"activities": [
 			{
-				"name": "CopyFy22Joost",
+				"name": "ProjectsNotDispositioned",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -428,7 +428,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Fy22Joost",
+						"referenceName": "ProjectsNotDispositioned",
 						"type": "DatasetReference"
 					}
 				],
@@ -438,7 +438,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Schema": "excel",
-							"Table": "rawFy22Joost"
+							"Table": "rawProjectsNotDispositioned"
 						}
 					}
 				]

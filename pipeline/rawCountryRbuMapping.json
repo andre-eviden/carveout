@@ -1,9 +1,9 @@
 {
-	"name": "rawFy22Jost",
+	"name": "rawCountryRbuMapping",
 	"properties": {
 		"activities": [
 			{
-				"name": "CopyFy22Joost",
+				"name": "CopyCountryRbuMapping",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -428,7 +428,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Fy22Joost",
+						"referenceName": "CountryRbuMapping",
 						"type": "DatasetReference"
 					}
 				],
@@ -438,7 +438,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Schema": "excel",
-							"Table": "rawFy22Joost"
+							"Table": "rawCountryRbuMapping"
 						}
 					}
 				]

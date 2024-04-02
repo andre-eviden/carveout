@@ -1,9 +1,9 @@
 {
-	"name": "rawFy22Jost",
+	"name": "rawFy2023",
 	"properties": {
 		"activities": [
 			{
-				"name": "CopyFy22Joost",
+				"name": "CopyFy2023",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -428,7 +428,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Fy22Joost",
+						"referenceName": "Fy2023",
 						"type": "DatasetReference"
 					}
 				],
@@ -438,7 +438,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Schema": "excel",
-							"Table": "rawFy22Joost"
+							"Table": "rawFy2023"
 						}
 					}
 				]
