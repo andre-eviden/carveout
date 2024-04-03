@@ -41,8 +41,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PC RBU",
-									"type": "String",
+									"name": "PcRbu",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -53,8 +52,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PC GBU",
-									"type": "String",
+									"name": "PcGbu",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -65,8 +63,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PC Country",
-									"type": "String",
+									"name": "PcCountry",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -77,8 +74,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Country name",
-									"type": "String",
+									"name": "Countryname",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -89,8 +85,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Final Cust L1 Industry",
-									"type": "String",
+									"name": "FinalCustL1Industry",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -101,8 +96,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Final Customer",
-									"type": "String",
+									"name": "FinalCustomer",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -113,8 +107,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Final Customer Name",
-									"type": "String",
+									"name": "FinalCustomerName",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -125,8 +118,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "IRIS Code",
-									"type": "String",
+									"name": "IrisCode",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -137,8 +129,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Company Code CC",
-									"type": "String",
+									"name": "CompanyCodeCc",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -149,8 +140,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "CoCo Name",
-									"type": "String",
+									"name": "CoCoName",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -161,8 +151,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Project Definition.",
-									"type": "String",
+									"name": "ProjectDefinition",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -173,8 +162,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Project Name",
-									"type": "String",
+									"name": "ProjectName",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -185,8 +173,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Commercial Contract  number",
-									"type": "String",
+									"name": "CommercialContractNumber",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -197,8 +184,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Commercial Contract Name",
-									"type": "String",
+									"name": "CommercialContractName",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -209,8 +195,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Project Valid From",
-									"type": "String",
+									"name": "ProjectValidFrom",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -221,8 +206,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Projcet Valid To",
-									"type": "String",
+									"name": "ProjcetValidTo",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -233,8 +217,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FLAG Project Closed",
-									"type": "String",
+									"name": "FlagProjectClosed",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -245,8 +228,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Element",
-									"type": "String",
+									"name": "WbsElement",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -257,8 +239,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Name",
-									"type": "String",
+									"name": "WbsName",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -281,8 +262,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS PC Name",
-									"type": "String",
+									"name": "WbsPcName",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -293,8 +273,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS PC Segment",
-									"type": "String",
+									"name": "WbsPcSegment",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -305,8 +284,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Valid From",
-									"type": "String",
+									"name": "WbsValidFrom",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -317,8 +295,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Valid To",
-									"type": "String",
+									"name": "WbsValidTo",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -329,8 +306,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Flag WBS closed",
-									"type": "String",
+									"name": "FlagWbsclosed",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -341,8 +317,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Activity",
-									"type": "String",
+									"name": "WbsActivity",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -353,8 +328,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS BL/SL",
-									"type": "String",
+									"name": "WbsBlSl",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -365,8 +339,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Technology",
-									"type": "String",
+									"name": "WbsTechnology",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -377,8 +350,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FY 2022 ER * 1.000 EUR",
-									"type": "String",
+									"name": "Fy2022ErX1000eur",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -389,8 +361,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FY 2022 PM * 1.000 EUR",
-									"type": "String",
+									"name": "Fy2022PmX1000eur",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -401,8 +372,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Change?",
-									"type": "String",
+									"name": "WbsChange",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -413,8 +383,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Project Year",
-									"type": "String",
+									"name": "ProjectYear",
 									"physicalType": "nvarchar"
 								}
 							}
