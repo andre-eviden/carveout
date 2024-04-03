@@ -36,301 +36,23 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "PC RBU",
+									"name": "UID",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PC RBU",
-									"type": "String",
+									"name": "Uid",
 									"physicalType": "nvarchar"
 								}
 							},
 							{
 								"source": {
-									"name": "PC GBU",
+									"name": "Missing Projects",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PC GBU",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "PC Country",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "PC Country",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Country name",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Country name",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Final Cust L1 Industry",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Final Cust L1 Industry",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Final Customer",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Final Customer",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Final Customer Name",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Final Customer Name",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "IRIS Code",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "IRIS Code",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Company Code CC",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Company Code CC",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "CoCo Name",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "CoCo Name",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Project Definition.",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Project Definition.",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Project Name",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Project Name",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Commercial Contract  number",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Commercial Contract  number",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Commercial Contract Name",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Commercial Contract Name",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Project Valid From",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Project Valid From",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Projcet Valid To",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Projcet Valid To",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "FLAG Project Closed",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "FLAG Project Closed",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "WBS Element",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "WBS Element",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "WBS Name",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "WBS Name",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "WBS Profit Center",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "WBS Profit Center",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "WBS PC Name",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "WBS PC Name",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "WBS PC Segment",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "WBS PC Segment",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "WBS Valid From",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "WBS Valid From",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "WBS Valid To",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "WBS Valid To",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Flag WBS closed",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Flag WBS closed",
-									"type": "String",
+									"name": "MissingProjects",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -341,8 +63,118 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Activity",
+									"name": "WbsActivity",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Company code ID",
 									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CompanyCodeId",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Company code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Companycode",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "PC RBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PcRbu",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'PC GBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PcGbu",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Definition ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectDefinitionId",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Definition",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectDefinition",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Sales Document (Project)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SalesDocument",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Commercial Contract No.",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CommercialContractNo",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Commercial Contract",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CommercialContract",
 									"physicalType": "nvarchar"
 								}
 							},
@@ -353,68 +185,261 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS BL/SL",
+									"name": "Wbs BlSl",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "PC.BL",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PcBl",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Code (Project)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisCodeProject",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Key",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerKey",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomer",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Industry",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerIndustry",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Revenue 2021",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Revenue2021",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD Aug 2022 Revenue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdAug2022Revenue",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD Oct 2022 Revenue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdOct2022Revenue",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Revenue Total",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RevenueTotal",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Year",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
 							},
 							{
 								"source": {
-									"name": "WBS Technology",
+									"name": "Is this contract classified / secret (Yes/No)",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Technology",
-									"type": "String",
+									"name": "IsThisContractClassified",
 									"physicalType": "nvarchar"
 								}
 							},
 							{
 								"source": {
-									"name": "FY 2022 ER * 1.000 EUR",
+									"name": "Validated? (Correct customer, signed, complete document)",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FY 2022 ER * 1.000 EUR",
-									"type": "String",
+									"name": "Validated",
 									"physicalType": "nvarchar"
 								}
 							},
 							{
 								"source": {
-									"name": "FY 2022 PM * 1.000 EUR",
+									"name": "Fail Reason",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FY 2022 PM * 1.000 EUR",
-									"type": "String",
+									"name": "FailReason",
 									"physicalType": "nvarchar"
 								}
 							},
 							{
 								"source": {
-									"name": "WBS Change?",
+									"name": "Collection Status",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WBS Change?",
-									"type": "String",
+									"name": "CollectionStatus",
 									"physicalType": "nvarchar"
 								}
 							},
 							{
 								"source": {
-									"name": "Project Year",
+									"name": "Exclusion (Reason)",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Project Year",
+									"name": "Exclusion",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Source Tracking",
 									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SourceTracking",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Total FY 22",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TotalFy22",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Jan + Feb FY23 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "JanFebFy23Er",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD April 2023 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdApril2023Er",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD June 2023 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdJune2023Er",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD September 2023 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdSeptember2023Er",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "FY 2023 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Fy2023Er",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "April 2024 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "April2024Er",
 									"physicalType": "nvarchar"
 								}
 							}
@@ -438,7 +463,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Schema": "excel",
-							"Table": "rawBaseMdu"
+							"Table": "rawBaseMdu_"
 						}
 					}
 				]
