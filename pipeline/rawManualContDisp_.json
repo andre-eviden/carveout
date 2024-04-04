@@ -1,5 +1,5 @@
 {
-	"name": "rawManualContDisp",
+	"name": "rawManualContDisp_",
 	"properties": {
 		"activities": [
 			{
@@ -25,9 +25,9 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE [excel].[rawManualContDisp]",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
-						"tableOption": "autoCreate",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,

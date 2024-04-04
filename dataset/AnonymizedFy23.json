@@ -18,7 +18,7 @@
 				"folderPath": "dispositionscenarios",
 				"container": "bscarveout"
 			},
-			"range": "B3:AB100000000",
+			"range": "B3:AB4386",
 			"firstRowAsHeader": true
 		},
 		"schema": [
