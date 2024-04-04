@@ -87,6 +87,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "Country ID",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "CountryId",
 									"type": "String",
