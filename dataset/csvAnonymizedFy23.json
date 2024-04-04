@@ -1,0 +1,140 @@
+{
+	"name": "csvAnonymizedFy23",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionalScenarios"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Anonymized - FY23.csv",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Unnamed: 0",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 1",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 2",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 3",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 4",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 5",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 6",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 7",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 8",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 9",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 10",
+				"type": "String"
+			},
+			{
+				"name": "251847.7373518885",
+				"type": "String"
+			},
+			{
+				"name": "170933.64205388914",
+				"type": "String"
+			},
+			{
+				"name": "296771.83907684096",
+				"type": "String"
+			},
+			{
+				"name": "719553.2184826178",
+				"type": "String"
+			},
+			{
+				"name": "49917.156260543685",
+				"type": "String"
+			},
+			{
+				"name": "43438.36618017613",
+				"type": "String"
+			},
+			{
+				"name": "82059.26212528706",
+				"type": "String"
+			},
+			{
+				"name": "175414.7845660071",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 19",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 20",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 21",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 22",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 23",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 24",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 25",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 26",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 27",
+				"type": "String"
+			}
+		]
+	}
+}

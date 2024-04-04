@@ -1,0 +1,44 @@
+{
+	"name": "csvCountryRbuMapping",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionalScenarios"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Country-RBU Mapping.csv",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Country_Full",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "GBU",
+				"type": "String"
+			},
+			{
+				"name": "RBU",
+				"type": "String"
+			}
+		]
+	}
+}

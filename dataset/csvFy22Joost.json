@@ -1,0 +1,156 @@
+{
+	"name": "csvFy22Joost",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionalScenarios"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "FY22 Joost.csv",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PC RBU",
+				"type": "String"
+			},
+			{
+				"name": "PC GBU",
+				"type": "String"
+			},
+			{
+				"name": "PC Country",
+				"type": "String"
+			},
+			{
+				"name": "Country name",
+				"type": "String"
+			},
+			{
+				"name": "Final Cust L1 Industry",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer Name",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Code",
+				"type": "String"
+			},
+			{
+				"name": "Company Code CC",
+				"type": "String"
+			},
+			{
+				"name": "CoCo Name",
+				"type": "String"
+			},
+			{
+				"name": "Project Definition.",
+				"type": "String"
+			},
+			{
+				"name": "Project Name",
+				"type": "String"
+			},
+			{
+				"name": "Commercial Contract  number",
+				"type": "String"
+			},
+			{
+				"name": "Commercial Contract Name",
+				"type": "String"
+			},
+			{
+				"name": "Project Valid From",
+				"type": "String"
+			},
+			{
+				"name": "Projcet Valid To",
+				"type": "String"
+			},
+			{
+				"name": "FLAG Project Closed",
+				"type": "String"
+			},
+			{
+				"name": "WBS Element",
+				"type": "String"
+			},
+			{
+				"name": "WBS Name",
+				"type": "String"
+			},
+			{
+				"name": "WBS Profit Center",
+				"type": "String"
+			},
+			{
+				"name": "WBS PC Name",
+				"type": "String"
+			},
+			{
+				"name": "WBS PC Segment",
+				"type": "String"
+			},
+			{
+				"name": "WBS Valid From",
+				"type": "String"
+			},
+			{
+				"name": "WBS Valid To",
+				"type": "String"
+			},
+			{
+				"name": "Flag WBS closed",
+				"type": "String"
+			},
+			{
+				"name": "WBS Activity",
+				"type": "String"
+			},
+			{
+				"name": "WBS BL/SL",
+				"type": "String"
+			},
+			{
+				"name": "WBS Technology",
+				"type": "String"
+			},
+			{
+				"name": " FY 2022 ER * 1.000 EUR ",
+				"type": "String"
+			},
+			{
+				"name": " FY 2022 PM * 1.000 EUR ",
+				"type": "String"
+			},
+			{
+				"name": "WBS Change?",
+				"type": "String"
+			},
+			{
+				"name": "Project Year",
+				"type": "String"
+			}
+		]
+	}
+}

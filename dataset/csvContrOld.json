@@ -1,0 +1,380 @@
+{
+	"name": "csvContrOld",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionalScenarios"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Contr - Old.csv",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Unnamed: 0",
+				"type": "String"
+			},
+			{
+				"name": "Updated -->",
+				"type": "String"
+			},
+			{
+				"name": "2023-12-19 00:00:00",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 3",
+				"type": "String"
+			},
+			{
+				"name": "Hard Coded",
+				"type": "String"
+			},
+			{
+				"name": "Formula",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 6",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 7",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 8",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 9",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 10",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 11",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 12",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 13",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 14",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 15",
+				"type": "String"
+			},
+			{
+				"name": "1209790.5943012575",
+				"type": "String"
+			},
+			{
+				"name": "3118662.0019794893",
+				"type": "String"
+			},
+			{
+				"name": "5249972.244914492",
+				"type": "String"
+			},
+			{
+				"name": "9578424.841195261",
+				"type": "String"
+			},
+			{
+				"name": "4328452.596280745",
+				"type": "String"
+			},
+			{
+				"name": "5249972.244914492.1",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 22",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 23",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 24",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 25",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 26",
+				"type": "String"
+			},
+			{
+				"name": "185032.30128493565",
+				"type": "String"
+			},
+			{
+				"name": "549476.1049696227",
+				"type": "String"
+			},
+			{
+				"name": "692605.8575518964",
+				"type": "String"
+			},
+			{
+				"name": "1427114.2638064465",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 31",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 32",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 33",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 34",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 35",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 36",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 37",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 38",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 39",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 40",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 41",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 42",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 43",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 44",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 45",
+				"type": "String"
+			},
+			{
+				"name": "CRT",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 47",
+				"type": "String"
+			},
+			{
+				"name": "836898.9008533799",
+				"type": "String"
+			},
+			{
+				"name": "2020205.0601167032",
+				"type": "String"
+			},
+			{
+				"name": "3493846.8413060806",
+				"type": "String"
+			},
+			{
+				"name": "6350950.802276171",
+				"type": "String"
+			},
+			{
+				"name": "159476.50505564085",
+				"type": "String"
+			},
+			{
+				"name": "417743.23578522203",
+				"type": "String"
+			},
+			{
+				"name": "529550.3658402157",
+				"type": "String"
+			},
+			{
+				"name": "1106770.106681077",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 56",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 57",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 58",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 59",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 60",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 61",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 62",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 63",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 64",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 65",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 66",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 67",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 68",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 69",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 70",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 71",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 72",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 73",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 74",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 75",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 76",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 77",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 78",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 79",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 80",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 81",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 82",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 83",
+				"type": "String"
+			},
+			{
+				"name": "CRT.1",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 85",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 86",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 87",
+				"type": "String"
+			}
+		]
+	}
+}

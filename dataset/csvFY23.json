@@ -1,0 +1,188 @@
+{
+	"name": "csvFY23",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionalScenarios"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "FY23.csv",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Unnamed: 0",
+				"type": "String"
+			},
+			{
+				"name": "2023-11-06 00:00:00",
+				"type": "String"
+			},
+			{
+				"name": "<-- Updated",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 3",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 4",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 5",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 6",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 7",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 8",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 9",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 10",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 11",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 12",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 13",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 14",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 15",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 16",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 17",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 18",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 19",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 20",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 21",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 22",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 23",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 24",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 25",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 26",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 27",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 28",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 29",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 30",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 31",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 32",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 33",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 34",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 35",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 36",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 37",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 38",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 39",
+				"type": "String"
+			}
+		]
+	}
+}
