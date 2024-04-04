@@ -1,0 +1,324 @@
+{
+	"name": "csvProjects",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionalScenarios"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Projects.csv",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Unnamed: 0",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 1",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 2",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 3",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 4",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 5",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 6",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 7",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 8",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 9",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 10",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 11",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 12",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 13",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 14",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 15",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 16",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 17",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 18",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 19",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 20",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 21",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 22",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 23",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 24",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 25",
+				"type": "String"
+			},
+			{
+				"name": "1607837.3514300985",
+				"type": "String"
+			},
+			{
+				"name": "3843631.632057331",
+				"type": "String"
+			},
+			{
+				"name": "6373701.156313151",
+				"type": "String"
+			},
+			{
+				"name": "11825170.13980065",
+				"type": "String"
+			},
+			{
+				"name": "5451468.98348734",
+				"type": "String"
+			},
+			{
+				"name": "6373701.156313151.1",
+				"type": "String"
+			},
+			{
+				"name": "31645.156465672484",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 33",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 34",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 35",
+				"type": "String"
+			},
+			{
+				"name": "321353.59642799577",
+				"type": "String"
+			},
+			{
+				"name": "797969.0824389587",
+				"type": "String"
+			},
+			{
+				"name": "924199.588708167",
+				"type": "String"
+			},
+			{
+				"name": "2043522.2675751273",
+				"type": "String"
+			},
+			{
+				"name": "1211761.791550565",
+				"type": "String"
+			},
+			{
+				"name": "3170476.23891081",
+				"type": "String"
+			},
+			{
+				"name": "5345926.431351229",
+				"type": "String"
+			},
+			{
+				"name": "9728164.461812468",
+				"type": "String"
+			},
+			{
+				"name": "221593.31485973668",
+				"type": "String"
+			},
+			{
+				"name": "646208.0003174514",
+				"type": "String"
+			},
+			{
+				"name": "841696.5706891407",
+				"type": "String"
+			},
+			{
+				"name": "1709497.8858663375",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 48",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 49",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 50",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 51",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 52",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 53",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 54",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 55",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 56",
+				"type": "String"
+			},
+			{
+				"name": "New",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 58",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 59",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 60",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 61",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 62",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 63",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 64",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 65",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 66",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 67",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 68",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 69",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 70",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 71",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 72",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 73",
+				"type": "String"
+			}
+		]
+	}
+}

@@ -23,7 +23,8 @@
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "DelimitedTextReadSettings",
+							"skipLineCount": 2
 						}
 					},
 					"sink": {
@@ -86,11 +87,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Country ID",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "CountryId",
 									"type": "String",
@@ -110,11 +106,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Anonymized Project  ID",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "AnonymizedProjectId",
 									"type": "String",
@@ -122,11 +113,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Anonymized Final Customer",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "AnonymizedFinalCustomer",
 									"type": "String",
@@ -134,11 +120,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Updated Anonymized Contract ID",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "UpdatedAnonymizedContractId",
 									"type": "String",
@@ -146,11 +127,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Industry (If Applicable)",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "IndustryIfApplicable",
 									"type": "String",
@@ -158,11 +134,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "BDS 2022 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Bds2022Er",
 									"type": "Double",
@@ -170,11 +141,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Digital 2022 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Digital2022Er",
 									"type": "Double",
