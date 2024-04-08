@@ -1,0 +1,42 @@
+{
+	"name": "xlsxCountryRbuMapping",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Country-RBU Mapping.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Country_Full",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "GBU",
+				"type": "String"
+			},
+			{
+				"name": "RBU",
+				"type": "String"
+			}
+		]
+	}
+}

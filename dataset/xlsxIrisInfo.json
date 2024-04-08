@@ -1,0 +1,142 @@
+{
+	"name": "xlsxIrisInfo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "IRIS Info.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Account",
+				"type": "String"
+			},
+			{
+				"name": "SuperIRIS",
+				"type": "String"
+			},
+			{
+				"name": "iDeal?",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 3",
+				"type": "String"
+			},
+			{
+				"name": "IRIS ID",
+				"type": "String"
+			},
+			{
+				"name": "Client Name",
+				"type": "String"
+			},
+			{
+				"name": "Industry",
+				"type": "String"
+			},
+			{
+				"name": "Sub-Industry",
+				"type": "String"
+			},
+			{
+				"name": "Region",
+				"type": "String"
+			},
+			{
+				"name": "Lead Country Cluster",
+				"type": "String"
+			},
+			{
+				"name": "Lead Country",
+				"type": "String"
+			},
+			{
+				"name": "Client Type",
+				"type": "String"
+			},
+			{
+				"name": "CEP",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 13",
+				"type": "String"
+			},
+			{
+				"name": "Row Labels",
+				"type": "String"
+			},
+			{
+				"name": "Sum of YTD Oct 2022 Revenue",
+				"type": "String"
+			},
+			{
+				"name": "Rank",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 17",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 18",
+				"type": "String"
+			},
+			{
+				"name": "Super Customer ",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Code",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 21",
+				"type": "String"
+			},
+			{
+				"name": "Contract_LE",
+				"type": "String"
+			},
+			{
+				"name": "IRIS",
+				"type": "String"
+			},
+			{
+				"name": "RBU",
+				"type": "String"
+			},
+			{
+				"name": "ER",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 26",
+				"type": "String"
+			},
+			{
+				"name": "LE",
+				"type": "String"
+			},
+			{
+				"name": "OOS Reason",
+				"type": "String"
+			}
+		]
+	}
+}

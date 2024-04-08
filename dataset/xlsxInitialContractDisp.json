@@ -1,0 +1,390 @@
+{
+	"name": "xlsxInitialContractDisp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Initial Contract Disp..xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Contract_LE",
+				"type": "String"
+			},
+			{
+				"name": "Contract",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Code",
+				"type": "String"
+			},
+			{
+				"name": "SuperIRIS",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Name",
+				"type": "String"
+			},
+			{
+				"name": "Account Size",
+				"type": "String"
+			},
+			{
+				"name": "InterDeal",
+				"type": "String"
+			},
+			{
+				"name": "PC RBU",
+				"type": "String"
+			},
+			{
+				"name": "Full RBU Name",
+				"type": "String"
+			},
+			{
+				"name": "PC GBU",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Country_Full",
+				"type": "String"
+			},
+			{
+				"name": "Company code ID",
+				"type": "String"
+			},
+			{
+				"name": "Company code",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer Industry",
+				"type": "String"
+			},
+			{
+				"name": "BDS FY22 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "DIG FY22 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TF FY22 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Total FY22 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Green",
+				"type": "String"
+			},
+			{
+				"name": "Blue",
+				"type": "String"
+			},
+			{
+				"name": "% Green",
+				"type": "String"
+			},
+			{
+				"name": "% Blue",
+				"type": "String"
+			},
+			{
+				"name": "Minority BL",
+				"type": "String"
+			},
+			{
+				"name": "Minority ER",
+				"type": "String"
+			},
+			{
+				"name": "% Minority ER",
+				"type": "String"
+			},
+			{
+				"name": "BDS FY22 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "DIG FY22 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TF FY22 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Total FY22 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Green PM 22",
+				"type": "String"
+			},
+			{
+				"name": "No. Included Projects",
+				"type": "String"
+			},
+			{
+				"name": "No. Mixed Projects",
+				"type": "String"
+			},
+			{
+				"name": "No. Pure Projects",
+				"type": "String"
+			},
+			{
+				"name": "No. 0 or Neg. Projects",
+				"type": "String"
+			},
+			{
+				"name": "Project Scope",
+				"type": "String"
+			},
+			{
+				"name": "Total Revenue",
+				"type": "String"
+			},
+			{
+				"name": "Scope",
+				"type": "String"
+			},
+			{
+				"name": "Scope Separability",
+				"type": "String"
+			},
+			{
+				"name": "Business Line Allocation",
+				"type": "String"
+			},
+			{
+				"name": "Workstream 6 Legal Entity Recommendation (LE, Not Contract)",
+				"type": "String"
+			},
+			{
+				"name": "LE Recommendation Description",
+				"type": "String"
+			},
+			{
+				"name": "ScenID",
+				"type": "String"
+			},
+			{
+				"name": "Disp Prelim",
+				"type": "String"
+			},
+			{
+				"name": "Threshhold Exception",
+				"type": "String"
+			},
+			{
+				"name": "Current Initial Disposition Recommendation (December 15)",
+				"type": "String"
+			},
+			{
+				"name": "Disposition Source",
+				"type": "String"
+			},
+			{
+				"name": "BDS FY23 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "DIG FY23 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TF FY23 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Total FY23 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "BDS FY23 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "DIG FY23 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TF FY23 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Total FY23 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Latest Expiration Date",
+				"type": "String"
+			},
+			{
+				"name": "Can Atos assign the agreement?",
+				"type": "String"
+			},
+			{
+				"name": "Exceptions to consent to assign",
+				"type": "String"
+			},
+			{
+				"name": "Can Atos subcontract the agreement?",
+				"type": "String"
+			},
+			{
+				"name": "Exceptions to consent to subcontract",
+				"type": "String"
+			},
+			{
+				"name": "Change of control provision",
+				"type": "String"
+			},
+			{
+				"name": "Change of control requires notice/consent?",
+				"type": "String"
+			},
+			{
+				"name": "Summary Contract Disposition Plan",
+				"type": "String"
+			},
+			{
+				"name": "Concat IRIS/Country",
+				"type": "String"
+			},
+			{
+				"name": "CEP",
+				"type": "String"
+			},
+			{
+				"name": "Country Industry",
+				"type": "String"
+			},
+			{
+				"name": "Workbook",
+				"type": "String"
+			},
+			{
+				"name": "Concat SuperIRIS Workbook",
+				"type": "String"
+			},
+			{
+				"name": "Transferee LE ID",
+				"type": "String"
+			},
+			{
+				"name": "NewCo LE Incorporation Date",
+				"type": "String"
+			},
+			{
+				"name": "LCO Date (LE)",
+				"type": "String"
+			},
+			{
+				"name": "LE_LCO",
+				"type": "String"
+			},
+			{
+				"name": "Date of local Legal Entity Carve Out (Contract)",
+				"type": "String"
+			},
+			{
+				"name": "Date of local Legal Entity Carve Out (IRIS)",
+				"type": "String"
+			},
+			{
+				"name": "Helper - Contract Year",
+				"type": "String"
+			},
+			{
+				"name": "Contract Year",
+				"type": "String"
+			},
+			{
+				"name": "Old_SuperIRIS",
+				"type": "String"
+			},
+			{
+				"name": "Old_Rev Bucket",
+				"type": "String"
+			},
+			{
+				"name": "Old_ER",
+				"type": "String"
+			},
+			{
+				"name": "Old_Separability",
+				"type": "String"
+			},
+			{
+				"name": "Old_BL Allocation",
+				"type": "String"
+			},
+			{
+				"name": "LE Movement",
+				"type": "String"
+			},
+			{
+				"name": "Old_Exception",
+				"type": "String"
+			},
+			{
+				"name": "Previous Disposition Recommendation (Shared December 1)",
+				"type": "String"
+			},
+			{
+				"name": "Change?",
+				"type": "String"
+			},
+			{
+				"name": "Reason for Change",
+				"type": "String"
+			},
+			{
+				"name": "Contract Type",
+				"type": "String"
+			},
+			{
+				"name": "Post-Migration SharePoint ID",
+				"type": "String"
+			},
+			{
+				"name": "APAC Clusters",
+				"type": "String"
+			},
+			{
+				"name": "GDC",
+				"type": "String"
+			},
+			{
+				"name": "APAC",
+				"type": "String"
+			}
+		]
+	}
+}

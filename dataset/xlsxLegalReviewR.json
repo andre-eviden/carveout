@@ -1,0 +1,278 @@
+{
+	"name": "xlsxLegalReviewR",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Legal Review - R.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Hora de inicio",
+				"type": "String"
+			},
+			{
+				"name": "Hora de finalización",
+				"type": "String"
+			},
+			{
+				"name": "Correo electrónico",
+				"type": "String"
+			},
+			{
+				"name": "Nombre",
+				"type": "String"
+			},
+			{
+				"name": "Region",
+				"type": "String"
+			},
+			{
+				"name": "Nature/Level of classification",
+				"type": "String"
+			},
+			{
+				"name": "Customer Contract Storage",
+				"type": "String"
+			},
+			{
+				"name": "Location of Customer Contract Storage",
+				"type": "String"
+			},
+			{
+				"name": "Document Access",
+				"type": "String"
+			},
+			{
+				"name": "Contract Name",
+				"type": "String"
+			},
+			{
+				"name": "Atos Entity Name",
+				"type": "String"
+			},
+			{
+				"name": "Customer Name",
+				"type": "String"
+			},
+			{
+				"name": "Agreement Type",
+				"type": "String"
+			},
+			{
+				"name": "Signature Date",
+				"type": "String"
+			},
+			{
+				"name": "Language",
+				"type": "String"
+			},
+			{
+				"name": "Co-Party Delivery?",
+				"type": "String"
+			},
+			{
+				"name": "Term",
+				"type": "String"
+			},
+			{
+				"name": "If Contingent/Conditional, Describe",
+				"type": "String"
+			},
+			{
+				"name": "If Auto Renewal, Notice of Non-Renewal Length",
+				"type": "String"
+			},
+			{
+				"name": "If Optional or Auto Renewal, Renewal Term Length",
+				"type": "String"
+			},
+			{
+				"name": "Initial Term Expiration Date",
+				"type": "String"
+			},
+			{
+				"name": "Renewal Information",
+				"type": "String"
+			},
+			{
+				"name": "Term Section reference",
+				"type": "String"
+			},
+			{
+				"name": "Does a Guarantee Exist?",
+				"type": "String"
+			},
+			{
+				"name": "Atos's Guarantor Details",
+				"type": "String"
+			},
+			{
+				"name": "Is guaranty transferable?",
+				"type": "String"
+			},
+			{
+				"name": "Guaranty Duration",
+				"type": "String"
+			},
+			{
+				"name": "Guaranty Section reference",
+				"type": "String"
+			},
+			{
+				"name": "Can Atos assign the Agreement?",
+				"type": "String"
+			},
+			{
+				"name": "Can Atos assign the agreement in whole OR in part?",
+				"type": "String"
+			},
+			{
+				"name": "'Exceptions to consent to assign",
+				"type": "String"
+			},
+			{
+				"name": "'If assignment exception to consent exercised, notice required?",
+				"type": "String"
+			},
+			{
+				"name": "'Consent to assign not unreasonably withheld?",
+				"type": "String"
+			},
+			{
+				"name": "'Addition Qualification to assignment?",
+				"type": "String"
+			},
+			{
+				"name": "Assignment section reference",
+				"type": "String"
+			},
+			{
+				"name": "'Can Atos subcontract the agreement?",
+				"type": "String"
+			},
+			{
+				"name": "Exceptions to consent to subcontract",
+				"type": "String"
+			},
+			{
+				"name": "'Is there a maximum % of TCV which can be subcontracted?",
+				"type": "String"
+			},
+			{
+				"name": "'If yes, provide maximum %",
+				"type": "String"
+			},
+			{
+				"name": "Subcontract section reference",
+				"type": "String"
+			},
+			{
+				"name": "General Notices section reference",
+				"type": "String"
+			},
+			{
+				"name": "Change of Control provision",
+				"type": "String"
+			},
+			{
+				"name": "Change of Control actions",
+				"type": "String"
+			},
+			{
+				"name": "'Change of control requires notice/consent?",
+				"type": "String"
+			},
+			{
+				"name": "'If CoC Notice is required, what is the notice period?",
+				"type": "String"
+			},
+			{
+				"name": "'Change of control triggers termination rights?",
+				"type": "String"
+			},
+			{
+				"name": "'Does change of control trigger specific indemnification rights in favour of the Atos Customer?",
+				"type": "String"
+			},
+			{
+				"name": "Change of Control section reference",
+				"type": "String"
+			},
+			{
+				"name": "Can agreement be transferred via Operation of Law?",
+				"type": "String"
+			},
+			{
+				"name": "Operation of Law section reference",
+				"type": "String"
+			},
+			{
+				"name": "Termination for Convenience right",
+				"type": "String"
+			},
+			{
+				"name": "Atos Customer Termination for Convenience Requirement",
+				"type": "String"
+			},
+			{
+				"name": "Atos Customer Termination for Convenience Notice Period",
+				"type": "String"
+			},
+			{
+				"name": "Atos Customer Termination for Convenience Consequences",
+				"type": "String"
+			},
+			{
+				"name": "Termination for Convenience section reference",
+				"type": "String"
+			},
+			{
+				"name": "Is offshoring permitted?",
+				"type": "String"
+			},
+			{
+				"name": "Certifications Required?",
+				"type": "String"
+			},
+			{
+				"name": "Is benchmarking permitted?",
+				"type": "String"
+			},
+			{
+				"name": "Is there a financial stability clause?",
+				"type": "String"
+			},
+			{
+				"name": "Financial stability clause section reference",
+				"type": "String"
+			},
+			{
+				"name": "Is pricing and/or rebates linked to volume of business?",
+				"type": "String"
+			},
+			{
+				"name": "What is the governing law of the agreement?",
+				"type": "String"
+			}
+		]
+	}
+}

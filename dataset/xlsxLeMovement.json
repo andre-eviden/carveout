@@ -1,0 +1,170 @@
+{
+	"name": "xlsxLeMovement",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "LE Movement.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Company Code CC",
+				"type": "String"
+			},
+			{
+				"name": "CC",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Previous Week Rec",
+				"type": "String"
+			},
+			{
+				"name": "LCO Date (Based on Receiving Entity)",
+				"type": "String"
+			},
+			{
+				"name": "Rec Match?",
+				"type": "String"
+			},
+			{
+				"name": "Date Match?",
+				"type": "String"
+			},
+			{
+				"name": "Current Week Rec",
+				"type": "String"
+			},
+			{
+				"name": "Value Used",
+				"type": "String"
+			},
+			{
+				"name": "Carveout Entity",
+				"type": "String"
+			},
+			{
+				"name": "Transferee LE ID (Inc. Merged)",
+				"type": "String"
+			},
+			{
+				"name": "NewCo LE Incorporation Date",
+				"type": "String"
+			},
+			{
+				"name": "Concat",
+				"type": "String"
+			},
+			{
+				"name": "LCO Date (Based on Receiving Entity).1",
+				"type": "String"
+			},
+			{
+				"name": "22 ER in File",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 15",
+				"type": "String"
+			},
+			{
+				"name": "LE in Clarity",
+				"type": "String"
+			},
+			{
+				"name": "Carveout Entity.1",
+				"type": "String"
+			},
+			{
+				"name": "NewCo LE Incorporation Date.1",
+				"type": "String"
+			},
+			{
+				"name": "Transaction Date",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 20",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 21",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 22",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 23",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Code",
+				"type": "String"
+			},
+			{
+				"name": "Recommendation",
+				"type": "String"
+			},
+			{
+				"name": "If carveout, into which entity",
+				"type": "String"
+			},
+			{
+				"name": "Carve-out entity (IRIS)",
+				"type": "String"
+			},
+			{
+				"name": "LE Incorporation Effective Date",
+				"type": "String"
+			},
+			{
+				"name": "Legal local carve-out date",
+				"type": "String"
+			},
+			{
+				"name": "LE Source",
+				"type": "String"
+			},
+			{
+				"name": "Description",
+				"type": "String"
+			},
+			{
+				"name": "Transaction date",
+				"type": "String"
+			},
+			{
+				"name": "LE Source.1",
+				"type": "String"
+			},
+			{
+				"name": "Description.1",
+				"type": "String"
+			},
+			{
+				"name": "Transaction date.1",
+				"type": "String"
+			}
+		]
+	}
+}

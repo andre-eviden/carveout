@@ -1,0 +1,182 @@
+{
+	"name": "xlsxFy23",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "FY23.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "PC RBU",
+				"type": "String"
+			},
+			{
+				"name": "PC GBU",
+				"type": "String"
+			},
+			{
+				"name": "PC Country",
+				"type": "String"
+			},
+			{
+				"name": "Country Name",
+				"type": "String"
+			},
+			{
+				"name": "Company code",
+				"type": "String"
+			},
+			{
+				"name": "CoCo Name",
+				"type": "String"
+			},
+			{
+				"name": "Currency",
+				"type": "String"
+			},
+			{
+				"name": "Final Cust L1 Industry",
+				"type": "String"
+			},
+			{
+				"name": "Final Cust IRIS Code",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer Name",
+				"type": "String"
+			},
+			{
+				"name": "Project Definition.",
+				"type": "String"
+			},
+			{
+				"name": "Project Name",
+				"type": "String"
+			},
+			{
+				"name": "Project Profit Center",
+				"type": "String"
+			},
+			{
+				"name": "Project PC Name",
+				"type": "String"
+			},
+			{
+				"name": "Commercial Contract  number",
+				"type": "String"
+			},
+			{
+				"name": "Comm Contract Name",
+				"type": "String"
+			},
+			{
+				"name": "Project Valid From",
+				"type": "String"
+			},
+			{
+				"name": "Project Valid To",
+				"type": "String"
+			},
+			{
+				"name": "FLAG Project Closed",
+				"type": "String"
+			},
+			{
+				"name": "WBS Element",
+				"type": "String"
+			},
+			{
+				"name": "WBS Name",
+				"type": "String"
+			},
+			{
+				"name": "WBS Profit Center(Nessie",
+				"type": "String"
+			},
+			{
+				"name": "WBS PC Name",
+				"type": "String"
+			},
+			{
+				"name": "WBS PC Segment(Nessie)",
+				"type": "String"
+			},
+			{
+				"name": "WBS PC Branch",
+				"type": "String"
+			},
+			{
+				"name": "WBS Valid From",
+				"type": "String"
+			},
+			{
+				"name": "WBS Creation date",
+				"type": "String"
+			},
+			{
+				"name": "WBS Valid To",
+				"type": "String"
+			},
+			{
+				"name": "Flag WBS closed",
+				"type": "String"
+			},
+			{
+				"name": "Reference WBS Elemen",
+				"type": "String"
+			},
+			{
+				"name": "WBS Activity",
+				"type": "String"
+			},
+			{
+				"name": "WBS Technology",
+				"type": "String"
+			},
+			{
+				"name": "ER * 1.000 EUR",
+				"type": "String"
+			},
+			{
+				"name": "PM * 1.000 EUR",
+				"type": "String"
+			},
+			{
+				"name": "WBS Change?",
+				"type": "String"
+			},
+			{
+				"name": "Project Year",
+				"type": "String"
+			},
+			{
+				"name": "Include",
+				"type": "String"
+			},
+			{
+				"name": "+",
+				"type": "String"
+			}
+		]
+	}
+}
