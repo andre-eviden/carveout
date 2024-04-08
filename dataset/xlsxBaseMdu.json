@@ -1,0 +1,174 @@
+{
+	"name": "xlsxBaseMdu",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Base MDU.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "UID",
+				"type": "String"
+			},
+			{
+				"name": "Missing Projects",
+				"type": "String"
+			},
+			{
+				"name": "WBS Activity",
+				"type": "String"
+			},
+			{
+				"name": "Company code ID",
+				"type": "String"
+			},
+			{
+				"name": "Company code",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "PC RBU",
+				"type": "String"
+			},
+			{
+				"name": "'PC GBU",
+				"type": "String"
+			},
+			{
+				"name": "Project Definition ID",
+				"type": "String"
+			},
+			{
+				"name": "Project Definition",
+				"type": "String"
+			},
+			{
+				"name": "Sales Document (Project)",
+				"type": "String"
+			},
+			{
+				"name": "Commercial Contract No.",
+				"type": "String"
+			},
+			{
+				"name": "'Commercial Contract",
+				"type": "String"
+			},
+			{
+				"name": "WBS BL/SL",
+				"type": "String"
+			},
+			{
+				"name": "PC.BL",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Code (Project)",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer Key",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer Industry",
+				"type": "String"
+			},
+			{
+				"name": "Revenue 2021",
+				"type": "String"
+			},
+			{
+				"name": "YTD Aug 2022 Revenue",
+				"type": "String"
+			},
+			{
+				"name": "YTD Oct 2022 Revenue",
+				"type": "String"
+			},
+			{
+				"name": "Revenue Total",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Is this contract classified / secret (Yes/No)",
+				"type": "String"
+			},
+			{
+				"name": "Validated? (Correct customer, signed, complete document)",
+				"type": "String"
+			},
+			{
+				"name": "Fail Reason",
+				"type": "String"
+			},
+			{
+				"name": "Collection Status",
+				"type": "String"
+			},
+			{
+				"name": "Exclusion (Reason)",
+				"type": "String"
+			},
+			{
+				"name": "Source Tracking",
+				"type": "String"
+			},
+			{
+				"name": "Total FY 22",
+				"type": "String"
+			},
+			{
+				"name": "Jan + Feb FY23 ER",
+				"type": "String"
+			},
+			{
+				"name": "YTD April 2023 ER",
+				"type": "String"
+			},
+			{
+				"name": "YTD June 2023 ER",
+				"type": "String"
+			},
+			{
+				"name": "YTD September 2023 ER",
+				"type": "String"
+			},
+			{
+				"name": "FY 2023 ER",
+				"type": "String"
+			},
+			{
+				"name": "April 2024 ER",
+				"type": "String"
+			}
+		]
+	}
+}

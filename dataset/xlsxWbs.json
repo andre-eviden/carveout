@@ -1,0 +1,78 @@
+{
+	"name": "xlsxWbs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "WBS.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Final Customer Name",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Code",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Project Definition.",
+				"type": "String"
+			},
+			{
+				"name": "Project Name",
+				"type": "String"
+			},
+			{
+				"name": "WBS Element",
+				"type": "String"
+			},
+			{
+				"name": "WBS Name",
+				"type": "String"
+			},
+			{
+				"name": "Requested change",
+				"type": "String"
+			},
+			{
+				"name": "Justification",
+				"type": "String"
+			},
+			{
+				"name": "Received?",
+				"type": "String"
+			},
+			{
+				"name": "Contract_LE",
+				"type": "String"
+			},
+			{
+				"name": "Concat",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 12",
+				"type": "String"
+			}
+		]
+	}
+}

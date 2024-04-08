@@ -41,236 +41,192 @@
 							{
 								"source": {
 									"name": "Item nr",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "ItemNr",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "LE",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "Le",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "RBU",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "Rbu",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "GBU",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "Gbu",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "Country ID",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "CountryId",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "Country",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "Country",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"sink": {
 									"name": "AnonymizedProjectId",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"sink": {
 									"name": "AnonymizedFinalCustomer",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"sink": {
 									"name": "UpdatedAnonymizedContractId",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"sink": {
 									"name": "IndustryIfApplicable",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"sink": {
 									"name": "Bds2022Er",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "Digital2022Er",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "TecFoundation2022Er",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "GrandTotal2022Er",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "Bds2022Pm",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "Digital2022Pm",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "TecFoundation2022Pm",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "GrandTotal2022Pm",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "BdsFy2023Er",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "DigitalFy2023Er",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "TecFoundationFy2023Er",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "GrandTotalFy2023Er",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "BdsFy2023Pm",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "DigitalFy2023Pm",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "TecFoundationFy2023Pm",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "GrandTotalFy2023Pm",
-									"type": "Double",
-									"physicalType": "float"
+									"type": "Double"
 								}
 							},
 							{
 								"sink": {
 									"name": "ProjectYear",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							}
-						],
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
+						]
 					}
 				},
-				"inputs": [
-					{
-						"referenceName": "csvAnonymizedFy23",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "dbcarveout",
