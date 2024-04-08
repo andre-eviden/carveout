@@ -1,0 +1,25 @@
+{
+	"name": "xlsxFY22Joost",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "FY22 Joost.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
