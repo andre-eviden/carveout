@@ -1,5 +1,5 @@
 {
-	"name": "xlsxLegalReview",
+	"name": "xlsxWbsX",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -14,7 +14,7 @@
 			"sheetName": "Sheet1",
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Legal Review.xlsx",
+				"fileName": "WBS.xlsx",
 				"folderPath": "dispositionscenarios",
 				"container": "bscarveout"
 			},
@@ -22,67 +22,55 @@
 		},
 		"schema": [
 			{
-				"name": "Contract ID (NEW)",
+				"name": "Final Customer Name",
 				"type": "String"
 			},
 			{
-				"name": "Contract ID (OLD)",
+				"name": "IRIS Code",
 				"type": "String"
 			},
 			{
-				"name": "Latest Expiration Date",
+				"name": "Country",
 				"type": "String"
 			},
 			{
-				"name": "Contingent or Optional Renewal Term",
+				"name": "Project Definition.",
 				"type": "String"
 			},
 			{
-				"name": "Can Atos assign the agreement?",
+				"name": "Project Name",
 				"type": "String"
 			},
 			{
-				"name": "Exceptions to consent to assign",
+				"name": "WBS Element",
 				"type": "String"
 			},
 			{
-				"name": "Can Atos subcontract the agreement?",
+				"name": "WBS Name",
 				"type": "String"
 			},
 			{
-				"name": "Exceptions to consent to subcontract",
+				"name": "Requested change",
 				"type": "String"
 			},
 			{
-				"name": "Change of control provision",
+				"name": "Justification",
 				"type": "String"
 			},
 			{
-				"name": "Change of control requires notice/consent?",
+				"name": "Received?",
 				"type": "String"
 			},
 			{
-				"name": "Contract ID Old in Contract Tab?",
+				"name": "Contract_LE",
 				"type": "String"
 			},
 			{
-				"name": "Contract ID New in Contract Tab?",
+				"name": "Concat",
 				"type": "String"
 			},
 			{
-				"name": "Contract ID",
-				"type": "String"
-			},
-			{
-				"name": "Unnamed: 13",
-				"type": "String"
-			},
-			{
-				"name": "Unnamed: 14",
-				"type": "String"
-			},
-			{
-				"name": "Unnamed: 15",
+				"name": "Unnamed: 12",
 				"type": "String"
 			}
 		]

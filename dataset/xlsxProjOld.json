@@ -1,0 +1,298 @@
+{
+	"name": "xlsxProjOld",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Proj - Old.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Unnamed: 0",
+				"type": "String"
+			},
+			{
+				"name": "Project Definition.",
+				"type": "String"
+			},
+			{
+				"name": "Project ID",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Code",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Code (New)",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Name",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer ID",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer Name",
+				"type": "String"
+			},
+			{
+				"name": "LE ID",
+				"type": "String"
+			},
+			{
+				"name": "LE (Inc Merged)",
+				"type": "String"
+			},
+			{
+				"name": "LE",
+				"type": "String"
+			},
+			{
+				"name": "Contract No.",
+				"type": "String"
+			},
+			{
+				"name": "Contract_LE",
+				"type": "String"
+			},
+			{
+				"name": "Validation Status",
+				"type": "String"
+			},
+			{
+				"name": "Input in Online Mapping Workbook",
+				"type": "String"
+			},
+			{
+				"name": "OOS Reason",
+				"type": "String"
+			},
+			{
+				"name": "Fail Reason",
+				"type": "String"
+			},
+			{
+				"name": "Fail Reason Notes",
+				"type": "String"
+			},
+			{
+				"name": "Scope for Disp",
+				"type": "String"
+			},
+			{
+				"name": "Include for Disp?",
+				"type": "String"
+			},
+			{
+				"name": "RBU",
+				"type": "String"
+			},
+			{
+				"name": "GBU",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Country_Full",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer Industry",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Rank ('22 ER)",
+				"type": "String"
+			},
+			{
+				"name": "BDS FY22 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "DIG FY22 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TF FY22 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Total FY22 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Green ER",
+				"type": "String"
+			},
+			{
+				"name": "Blue ER",
+				"type": "String"
+			},
+			{
+				"name": "Minority ER",
+				"type": "String"
+			},
+			{
+				"name": "% of Revenue Evidian",
+				"type": "String"
+			},
+			{
+				"name": "% of Revenue Atos",
+				"type": "String"
+			},
+			{
+				"name": "Lead Business %",
+				"type": "String"
+			},
+			{
+				"name": "BDS FY22 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "DIG FY22 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TF FY22 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Total FY22 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "BDS YTD23 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "DIG YTD23 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TF YTD23 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Total YTD23 ER (000's)",
+				"type": "String"
+			},
+			{
+				"name": "BDS YTD23 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "DIG YTD23 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "TF YTD23 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Total YTD23 PM (000's)",
+				"type": "String"
+			},
+			{
+				"name": "Top 300 Account",
+				"type": "String"
+			},
+			{
+				"name": "Proj. Scope 22",
+				"type": "String"
+			},
+			{
+				"name": "Impact on LE with carveout",
+				"type": "String"
+			},
+			{
+				"name": "Contract Disposition",
+				"type": "String"
+			},
+			{
+				"name": "Contract_LE | Industry",
+				"type": "String"
+			},
+			{
+				"name": "Count of Contract_LE | Industry",
+				"type": "String"
+			},
+			{
+				"name": "Count of Contract",
+				"type": "String"
+			},
+			{
+				"name": "Final Industry at Contract Level ",
+				"type": "String"
+			},
+			{
+				"name": "Append to Refoundation Perimeter?",
+				"type": "String"
+			},
+			{
+				"name": "Post-Migration SharePoint ID",
+				"type": "String"
+			},
+			{
+				"name": "Project Year",
+				"type": "String"
+			},
+			{
+				"name": "OLD_22 Total ER",
+				"type": "String"
+			},
+			{
+				"name": "OLD_Mapping Change?",
+				"type": "String"
+			},
+			{
+				"name": "Old_Validation Status",
+				"type": "String"
+			},
+			{
+				"name": "OLD_Contract ID",
+				"type": "String"
+			},
+			{
+				"name": "Change in Contract ID?",
+				"type": "String"
+			},
+			{
+				"name": "OLD_IRIS Code",
+				"type": "String"
+			},
+			{
+				"name": "OLD_Change1",
+				"type": "String"
+			},
+			{
+				"name": "OLD_LE",
+				"type": "String"
+			},
+			{
+				"name": "OLD_Change2",
+				"type": "String"
+			}
+		]
+	}
+}

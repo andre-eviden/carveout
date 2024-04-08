@@ -1,5 +1,5 @@
 {
-	"name": "xlsxLegalReview",
+	"name": "xlsxProjectsNotDispositionedxlsx",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -14,75 +14,76 @@
 			"sheetName": "Sheet1",
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Legal Review.xlsx",
+				"fileName": "Projects Not Dispositioned.xlsx",
 				"folderPath": "dispositionscenarios",
 				"container": "bscarveout"
-			},
-			"firstRowAsHeader": true
+			}
 		},
 		"schema": [
 			{
-				"name": "Contract ID (NEW)",
 				"type": "String"
 			},
 			{
-				"name": "Contract ID (OLD)",
 				"type": "String"
 			},
 			{
-				"name": "Latest Expiration Date",
 				"type": "String"
 			},
 			{
-				"name": "Contingent or Optional Renewal Term",
 				"type": "String"
 			},
 			{
-				"name": "Can Atos assign the agreement?",
 				"type": "String"
 			},
 			{
-				"name": "Exceptions to consent to assign",
 				"type": "String"
 			},
 			{
-				"name": "Can Atos subcontract the agreement?",
 				"type": "String"
 			},
 			{
-				"name": "Exceptions to consent to subcontract",
 				"type": "String"
 			},
 			{
-				"name": "Change of control provision",
 				"type": "String"
 			},
 			{
-				"name": "Change of control requires notice/consent?",
 				"type": "String"
 			},
 			{
-				"name": "Contract ID Old in Contract Tab?",
 				"type": "String"
 			},
 			{
-				"name": "Contract ID New in Contract Tab?",
 				"type": "String"
 			},
 			{
-				"name": "Contract ID",
 				"type": "String"
 			},
 			{
-				"name": "Unnamed: 13",
 				"type": "String"
 			},
 			{
-				"name": "Unnamed: 14",
 				"type": "String"
 			},
 			{
-				"name": "Unnamed: 15",
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
 				"type": "String"
 			}
 		]

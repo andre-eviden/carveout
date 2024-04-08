@@ -1,0 +1,42 @@
+{
+	"name": "xlsxProjectYearMap",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Project Year Map.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Project Definition.",
+				"type": "String"
+			},
+			{
+				"name": "2022?",
+				"type": "String"
+			},
+			{
+				"name": "2023?",
+				"type": "String"
+			},
+			{
+				"name": "Final Mapping",
+				"type": "String"
+			}
+		]
+	}
+}

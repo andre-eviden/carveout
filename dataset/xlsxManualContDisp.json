@@ -1,0 +1,70 @@
+{
+	"name": "xlsxManualContDisp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Manual Cont Disp.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Date Received",
+				"type": "String"
+			},
+			{
+				"name": "Company code",
+				"type": "String"
+			},
+			{
+				"name": "Project Definition ID",
+				"type": "String"
+			},
+			{
+				"name": "Contract_ID",
+				"type": "String"
+			},
+			{
+				"name": "Proposed Disposition",
+				"type": "String"
+			},
+			{
+				"name": "LE ID",
+				"type": "String"
+			},
+			{
+				"name": "Contract_LE",
+				"type": "String"
+			},
+			{
+				"name": "22 Project",
+				"type": "String"
+			},
+			{
+				"name": "Disp Rec",
+				"type": "String"
+			},
+			{
+				"name": "Diff",
+				"type": "String"
+			},
+			{
+				"name": "Source",
+				"type": "String"
+			}
+		]
+	}
+}
