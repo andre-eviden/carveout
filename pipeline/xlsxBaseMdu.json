@@ -1,9 +1,9 @@
 {
-	"name": "xlsxAnonymizedFY23",
+	"name": "xlsxBaseMdu",
 	"properties": {
 		"activities": [
 			{
-				"name": "CopyxlsxAnonymizedFY23",
+				"name": "CopyxlsxBaseMdu",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -25,7 +25,7 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"preCopyScript": "TRUNCATE TABLE xlsx.rawAnonymizedFy23;\n",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawBaseMdu;\n",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
 						"disableMetricsCollection": false
@@ -36,60 +36,60 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "Item nr",
+									"name": "UID",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ItemNr",
+									"name": "Uid",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "LE",
+									"name": "Missing Projects",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Le",
+									"name": "MissingProjects",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "RBU",
+									"name": "WBS Activity",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Rbu",
+									"name": "WbsActivity",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "GBU",
+									"name": "Company code ID",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Gbu",
+									"name": "CompanyCodeId",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "Country ID",
+									"name": "Company code",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "CountryId",
+									"name": "CompanyCode",
 									"type": "String",
 									"physicalType": "varchar"
 								}
@@ -108,254 +108,374 @@
 							},
 							{
 								"source": {
-									"name": "Anonymized Project  ID",
+									"name": "PC RBU",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AnonymizedProjectId",
+									"name": "PcRbu",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "Anonymized Final Customer",
+									"name": "'PC GBU",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AnonymizedFinalCustomer",
+									"name": "PcGbu",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": " Updated Anonymized Contract ID\n(N/A = inactive/closed projects)",
+									"name": "Project Definition ID",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "UpdatedAnonymizedContractId",
+									"name": "ProjectDefinitionId",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "Industry (If Applicable)",
+									"name": "Project Definition",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "IndustryIfApplicable",
+									"name": "ProjectDefinition",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "BDS 2022 ER",
+									"name": "Sales Document (Project)",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Bds2022Er",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Digital 2022 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Digital2022Er",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "TEC Foundation 2022 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "TecFoundation2022Er",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Grand Total 2022 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "GrandTotal2022Er",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "BDS 2022 PM",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Bds2022Pm",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Digital 2022 PM",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Digital2022Pm",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "TEC Foundation 2022 PM",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "TecFoundation2022Pm",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Grand Total 2022 PM",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "GrandTotal2022Pm",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "BDS FY 2023 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "BdsFy2023Er",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Digital FY 2023 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "DigitalFy2023Er",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "TEC Foundation FY 2023 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "TecFoundationFy2023Er",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Grand Total FY 2023 ER",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "GrandTotalFy2023Er",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "BDS FY 2023 PM",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "BdsFy2023Pm",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Digital FY 2023 PM",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "DigitalFy2023Pm",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "TEC Foundation FY 2023 PM",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "TecFoundationFy2023Pm",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Grand Total FY 2023 PM",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "GrandTotalFy2023Pm",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Project Year",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ProjectYear",
+									"name": "SalesDocumentProject",
 									"type": "String",
 									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Commercial Contract No.",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CommercialContractNo",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Commercial Contract",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CommercialContract",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS BL/SL",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsBlSl",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "PC.BL",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PcBl",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Code (Project)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisCodeProject",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Key",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerKey",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomer",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Industry",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerIndustry",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Revenue 2021",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Revenue2021",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD Aug 2022 Revenue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdAug2022Revenue",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD Oct 2022 Revenue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdOct2022Revenue",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Revenue Total",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RevenueTotal",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Year",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Is this contract classified / secret (Yes/No)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IsThisContractClassifiedSecretYesNo",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Validated? (Correct customer, signed, complete document)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ValidatedCorrectCustomerSignedCompleteDocument",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Fail Reason",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FailReason",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Collection Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CollectionStatus",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Exclusion (Reason)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ExclusionReason",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Source Tracking",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SourceTracking",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Total FY 22",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TotalFy22",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Jan + Feb FY23 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "JanFebFy23Er",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD April 2023 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdApril2023Er",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD June 2023 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdJune2023Er",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "YTD September 2023 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "YtdSeptember2023Er",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "FY 2023 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Fy2023Er",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "April 2024 ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "April2024Er",
+									"type": "Double",
+									"physicalType": "float"
 								}
 							}
 						],
@@ -368,7 +488,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "xlsxAnonymizedFY23",
+						"referenceName": "xlsxBaseMdu",
 						"type": "DatasetReference"
 					}
 				],
@@ -378,7 +498,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Schema": "xlsx",
-							"Table": "rawAnonymizedFY23"
+							"Table": "rawBaseMdu"
 						}
 					}
 				]

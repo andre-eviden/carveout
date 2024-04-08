@@ -1,0 +1,66 @@
+{
+	"name": "xlsxCrs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "CRs.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "Contract ID",
+				"type": "String"
+			},
+			{
+				"name": "Proposed Disposition",
+				"type": "String"
+			},
+			{
+				"name": " Disposition Change Approved/ Confirmed",
+				"type": "String"
+			},
+			{
+				"name": "Previous Disposition",
+				"type": "String"
+			},
+			{
+				"name": "Proposed Disposition (Correct Format)",
+				"type": "String"
+			},
+			{
+				"name": "Delete?",
+				"type": "String"
+			},
+			{
+				"name": "Approved",
+				"type": "String"
+			},
+			{
+				"name": "Duplicate?",
+				"type": "String"
+			}
+		]
+	}
+}

@@ -1,0 +1,206 @@
+{
+	"name": "xlsxContOverview",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dispositionscenarios"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Cont Overview.xlsx",
+				"folderPath": "dispositionscenarios",
+				"container": "bscarveout"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Contract_LE",
+				"type": "String"
+			},
+			{
+				"name": "SuperIRIS",
+				"type": "String"
+			},
+			{
+				"name": "IRIS Name",
+				"type": "String"
+			},
+			{
+				"name": "Final Customer Industry",
+				"type": "String"
+			},
+			{
+				"name": "RBU",
+				"type": "String"
+			},
+			{
+				"name": "GBU",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "CC ID",
+				"type": "String"
+			},
+			{
+				"name": "Source LE",
+				"type": "String"
+			},
+			{
+				"name": "WS6 LE Movement",
+				"type": "String"
+			},
+			{
+				"name": "Transferee LE ID",
+				"type": "String"
+			},
+			{
+				"name": "LCO Date (LE)",
+				"type": "String"
+			},
+			{
+				"name": "BDS",
+				"type": "String"
+			},
+			{
+				"name": "DIG",
+				"type": "String"
+			},
+			{
+				"name": "TF",
+				"type": "String"
+			},
+			{
+				"name": "Total",
+				"type": "String"
+			},
+			{
+				"name": "Prime Blue",
+				"type": "String"
+			},
+			{
+				"name": "Prime Green",
+				"type": "String"
+			},
+			{
+				"name": "BDS.1",
+				"type": "String"
+			},
+			{
+				"name": "DIG.1",
+				"type": "String"
+			},
+			{
+				"name": "TF.1",
+				"type": "String"
+			},
+			{
+				"name": "Total.1",
+				"type": "String"
+			},
+			{
+				"name": "Prime Blue.1",
+				"type": "String"
+			},
+			{
+				"name": "Prime Green.1",
+				"type": "String"
+			},
+			{
+				"name": "BDS.2",
+				"type": "String"
+			},
+			{
+				"name": "DIG.2",
+				"type": "String"
+			},
+			{
+				"name": "TF.2",
+				"type": "String"
+			},
+			{
+				"name": "Total.2",
+				"type": "String"
+			},
+			{
+				"name": "Prime Blue.2",
+				"type": "String"
+			},
+			{
+				"name": "Prime Green.2",
+				"type": "String"
+			},
+			{
+				"name": "BDS.3",
+				"type": "String"
+			},
+			{
+				"name": "DIG.3",
+				"type": "String"
+			},
+			{
+				"name": "TF.3",
+				"type": "String"
+			},
+			{
+				"name": "Total.3",
+				"type": "String"
+			},
+			{
+				"name": "Prime Blue.3",
+				"type": "String"
+			},
+			{
+				"name": "Prime Green.3",
+				"type": "String"
+			},
+			{
+				"name": "Current Initial Disposition Recommendation (December 15)",
+				"type": "String"
+			},
+			{
+				"name": "Summary Contract Disposition Plan",
+				"type": "String"
+			},
+			{
+				"name": "Disposition Source",
+				"type": "String"
+			},
+			{
+				"name": "Destination",
+				"type": "String"
+			},
+			{
+				"name": "Contract Year",
+				"type": "String"
+			},
+			{
+				"name": "Previous Disposition Recommendation (Shared December 1)",
+				"type": "String"
+			},
+			{
+				"name": "Reason for Change",
+				"type": "String"
+			},
+			{
+				"name": "Change of control provision",
+				"type": "String"
+			},
+			{
+				"name": "Change of control requires notice/consent?",
+				"type": "String"
+			}
+		]
+	}
+}
