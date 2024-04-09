@@ -1,0 +1,113 @@
+{
+	"name": "xlsxCountryRbuMapping",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyxlsxCountryRbuMapping",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ExcelSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawCountryRbuMapping;\n",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Country_Full",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CountryFull",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "GBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Gbu",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "RBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Rbu",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "xlsxCountryRbuMapping",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dbcarveout",
+						"type": "DatasetReference",
+						"parameters": {
+							"Schema": "xlsx",
+							"Table": "rawCountryRbuMapping"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

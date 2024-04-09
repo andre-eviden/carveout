@@ -1,9 +1,9 @@
 {
-	"name": "xlsxLegalReview",
+	"name": "xlsxFy23",
 	"properties": {
 		"activities": [
 			{
-				"name": "CopyxlsxLegalReview",
+				"name": "CopyxlsxFy23",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -25,7 +25,7 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"preCopyScript": "TRUNCATE TABLE xlsx.rawLegalReview;\n",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawFy23;\n",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
 						"disableMetricsCollection": false
@@ -36,146 +36,26 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "Contract ID (NEW)",
+									"name": "ID",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ContractIdNew",
+									"name": "Id",
 									"type": "String",
 									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "Contract ID (OLD)",
+									"name": "Status",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ContractIdOld",
+									"name": "Status",
 									"type": "String",
 									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Latest Expiration Date",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "LatestExpirationDate",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Contingent or Optional Renewal Term",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ContingentOrOptionalRenewalTerm",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Can Atos assign the agreement?",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "CanAtosAssignTheAgreement",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Exceptions to consent to assign",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ExceptionsToConsentToAssign",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Can Atos subcontract the agreement?",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "CanAtosSubcontractTheAgreement",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Exceptions to consent to subcontract",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ExceptionsToConsentToSubcontract",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Change of control provision",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ChangeOfControlProvision",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Change of control requires notice/consent?",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ChangeOfControlRequiresNoticeConsent",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "Contract ID Old in Contract Tab?",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ContractIdOldInContractTab",
-									"type": "Int32",
-									"physicalType": "int"
-								}
-							},
-							{
-								"source": {
-									"name": "Contract ID New in Contract Tab?",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ContractIdNewInContractTab",
-									"type": "Int32",
-									"physicalType": "int"
 								}
 							},
 							{
@@ -192,38 +72,86 @@
 							},
 							{
 								"source": {
-									"name": "Unnamed: 13",
+									"name": "Proposed Disposition",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Unnamed13",
-									"type": "Double",
-									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "Unnamed: 14",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Unnamed14",
-									"type": "DateTime",
-									"physicalType": "datetime"
-								}
-							},
-							{
-								"source": {
-									"name": "Unnamed: 15",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Unnamed15",
+									"name": "ProposedDisposition",
 									"type": "String",
 									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": " Disposition Change Approved/ Confirmed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DispositionChangeApprovedConfirmed",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Previous Disposition",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PreviousDisposition",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Proposed Disposition (Correct Format)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProposedDispositionCorrectFormat",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Delete?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DeleteQ",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Approved",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Approved",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Duplicate?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DuplicateQ",
+									"type": "Int32",
+									"physicalType": "int"
 								}
 							}
 						],
@@ -236,7 +164,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "xlsxLegalReview",
+						"referenceName": "xlsxFy23",
 						"type": "DatasetReference"
 					}
 				],
@@ -246,7 +174,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Schema": "xlsx",
-							"Table": "rawLegalReview"
+							"Table": "rawFy23"
 						}
 					}
 				]

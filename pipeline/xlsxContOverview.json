@@ -1,0 +1,605 @@
+{
+	"name": "xlsxContOverview",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyxlsxContOverview",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ExcelSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawContOverview;\n",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Contract_LE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractLe",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SuperIRIS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SuperIris",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Industry",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerIndustry",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "RBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Rbu",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "GBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Gbu",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CC ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CcId",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Source LE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SourceLe",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WS6 LE Movement",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Ws6LeMovement",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Transferee LE ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TransfereeLeId",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LCO Date (LE)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LcoDateLe",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "BDS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Bds",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "DIG",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Dig",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "TF",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Tf",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Total",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Total",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Prime Blue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimeBlue",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Prime Green",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimeGreen",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "BDS.1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Bds1",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "DIG.1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Dig1",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "TF.1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Tf1",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Total.1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Total1",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Prime Blue.1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimeBlue1",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Prime Green.1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimeGreen1",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "BDS.2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Bds2",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "DIG.2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Dig2",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "TF.2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Tf2",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Total.2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Total2",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Prime Blue.2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimeBlue2",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Prime Green.2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimeGreen2",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "BDS.3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Bds3",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "DIG.3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Dig3",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "TF.3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Tf3",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Total.3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Total3",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Prime Blue.3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimeBlue3",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Prime Green.3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimeGreen3",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Current Initial Disposition Recommendation (December 15)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CurrentInitialDispositionRecommendationDecember15",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Summary Contract Disposition Plan",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SummaryContractDispositionPlan",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Disposition Source",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DispositionSource",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Destination",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Destination",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Contract Year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractYear",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Previous Disposition Recommendation (Shared December 1)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PreviousDispositionRecommendationSharedDecember1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Reason for Change",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ReasonForChange",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Change of control provision",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ChangeOfControlProvision",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Change of control requires notice/consent?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ChangeOfControlRequiresNoticeConsent",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "xlsxContOverview",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dbcarveout",
+						"type": "DatasetReference",
+						"parameters": {
+							"Schema": "xlsx",
+							"Table": "rawContOverview"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
