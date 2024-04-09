@@ -1,0 +1,449 @@
+{
+	"name": "xlsxFY22Joost",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyxlsxFY22Joost",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ExcelSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawFY22Joost;\n",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "PC RBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PcRbu",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "PC GBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PcGbu",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "PC Country",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PcCountry",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Country name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CountryName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Cust L1 Industry",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustL1Industry",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomer",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisCode",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Company Code CC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CompanyCodeCc",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CoCo Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CocoName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Definition.",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectDefinition",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Commercial Contract  number",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CommercialContractNumber",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Commercial Contract Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CommercialContractName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Valid From",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectValidFrom",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Projcet Valid To",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectValidTo",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "FLAG Project Closed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FlagProjectClosed",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS Element",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsElement",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS Profit Center",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsProfitCenter",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS PC Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsPcName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS PC Segment",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsPcSegment",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS Valid From",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsValidFrom",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS Valid To",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsValidTo",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Flag WBS closed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FlagWbsClosed",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS Activity",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsActivity",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS BL/SL",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsBlSl",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS Technology",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsTechnology",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": " FY 2022 ER * 1.000 EUR ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Fy2022Er1000Eur",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": " FY 2022 PM * 1.000 EUR ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Fy2022Pm1000Eur",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "WBS Change?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WbsChangeQ",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectYear",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "xlsxFY22Joost",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dbcarveout",
+						"type": "DatasetReference",
+						"parameters": {
+							"Schema": "xlsx",
+							"Table": "rawFY22Joost"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
