@@ -1,5 +1,5 @@
 {
-	"name": "xlsxProjectsNotDispositionedxlsx",
+	"name": "xlsxProjectsNotDispositioned",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -17,7 +17,8 @@
 				"fileName": "Projects Not Dispositioned.xlsx",
 				"folderPath": "dispositionscenarios",
 				"container": "bscarveout"
-			}
+			},
+			"firstRowAsHeader": true
 		},
 		"schema": [
 			{
