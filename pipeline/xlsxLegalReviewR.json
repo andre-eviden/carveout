@@ -696,7 +696,7 @@
 							},
 							{
 								"source": {
-									"name": "Atos Customer Termination for Convenience Consequences",
+									"name": "Termination for Convenience section reference",
 									"type": "String",
 									"physicalType": "String"
 								},

@@ -1,0 +1,425 @@
+{
+	"name": "xlsxLeMovement",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyxlsxLeMovement",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ExcelSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawLeMovement;\n",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Company Code CC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CompanyCodeCc",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Cc",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Previous Week Rec",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PreviousWeekRec",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LCO Date (Based on Receiving Entity)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LcoDateBasedOnReceivingEntity",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Rec Match?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RecMatch",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Date Match?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DateMatch",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Current Week Rec",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CurrentWeekRec",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Value Used",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ValueUsed",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Carveout Entity",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CarveoutEntity",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Transferee LE ID (Inc. Merged)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TransfereeLeIdIncMerged",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "NewCo LE Incorporation Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "NewCoLeIncorporationDate",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Concat",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Concat",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LCO Date (Based on Receiving Entity).1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LcoDateBasedOnReceivingEntity1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "22 ER in File",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Er22InFile",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Unnamed: 15",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Unnamed16",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "LE in Clarity",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LeInClarity",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Carveout Entity.1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CarveoutEntity1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "NewCo LE Incorporation Date.1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "NewCoLeIncorporationDate1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Transaction Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TransactionDate",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Unnamed: 20",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Unnamed21",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Unnamed: 21",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Unnamed22",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Unnamed: 22",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Unnamed23",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Unnamed: 23",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Unnamed24",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisCode",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Recommendation",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Recommendation",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "If carveout, into which entity",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IfCarveoutIntoWhichEntity",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Carve-out entity (IRIS)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CarveOutEntityIris",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LE Incorporation Effective Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LeIncorporationEffectiveDate",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Legal local carve-out date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LegalLocalCarveOutDate",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "xlsxLeMovement",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dbcarveout",
+						"type": "DatasetReference",
+						"parameters": {
+							"Schema": "xlsx",
+							"Table": "rawLeMovement"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
