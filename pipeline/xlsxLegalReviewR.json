@@ -1,0 +1,821 @@
+{
+	"name": "xlsxLegalReviewR",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyxlsxLegalReviewR",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ExcelSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawLegalReviewR;\n",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Id",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Hora de inicio",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "HoraDeInicio",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Hora de finalización",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "HoraDeFinalizacion",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Correo electrónico",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CorreoElectronico",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Nombre",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Nombre",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Region",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Region",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Nature/Level of classification",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "NatureLevelOfClassification",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Customer Contract Storage",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CustomerContractStorage",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Location of Customer Contract Storage",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LocationOfCustomerContractStorage",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Document Access",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DocumentAccess",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Contract Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Atos Entity Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AtosEntityName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Customer Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CustomerName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Agreement Type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AgreementType",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Signature Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SignatureDate",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Language",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Language",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Co-Party Delivery?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CoPartyDelivery",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Term",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Term",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "If Contingent/Conditional, Describe",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IfContingentConditionalDescribe",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "If Auto Renewal, Notice of Non-Renewal Length",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IfAutoRenewalNoticeOfNonRenewalLength",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "If Optional or Auto Renewal, Renewal Term Length",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IfOptionalOrAutoRenewalRenewalTermLength",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Initial Term Expiration Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "InitialTermExpirationDate",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Renewal Information",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RenewalInformation",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Term Section reference",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TermSectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Does a Guarantee Exist?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DoesAGuaranteeExist",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Atos's Guarantor Details",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AtossGuarantorDetails",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Is guaranty transferable?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IsGuarantyTransferable",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Guaranty Duration",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "GuarantyDuration",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Guaranty Section reference",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "GuarantySectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Can Atos assign the Agreement?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CanAtosAssignTheAgreement",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Can Atos assign the agreement in whole OR in part?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CanAtosAssignTheAgreementInWholeOrInPart",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Exceptions to consent to assign",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ExceptionsToConsentToAssign",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'If assignment exception to consent exercised, notice required?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IfAssignmentExceptionToConsentExercisedNoticeRequired",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Consent to assign not unreasonably withheld?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ConsentToAssignNotUnreasonablyWithheld",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Addition Qualification to assignment?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AdditionQualificationToAssignment",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Assignment section reference",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AssignmentSectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Can Atos subcontract the agreement?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CanAtosSubcontractTheAgreement",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Exceptions to consent to assign",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ExceptionsToConsentToSubcontract",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Is there a maximum % of TCV which can be subcontracted?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IsThereAMaximumPercentOfTcvWhichCanBeSubcontracted",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'If yes, provide maximum %",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IfYesProvideMaximumPercent",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Subcontract section reference",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SubcontractSectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "General Notices section reference",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "GeneralNoticesSectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Change of Control provision",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ChangeOfControlProvision",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Change of Control actions",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ChangeOfControlActions",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Change of control requires notice/consent?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ChangeOfControlRequiresNoticeConsent",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'If CoC Notice is required, what is the notice period?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IfCoCNoticeIsRequiredWhatIsTheNoticePeriod",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Change of control triggers termination rights?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ChangeOfControlTriggersTerminationRights",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "'Does change of control trigger specific indemnification rights in favour of the Atos Customer?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DoesChangeOfControlTriggerSpecificIndemnificationRights",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Change of Control section reference",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ChangeOfControlSectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Can agreement be transferred via Operation of Law?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CanAgreementBeTransferredViaOperationOfLaw",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Operation of Law section reference",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OperationOfLawSectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Termination for Convenience right",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TerminationForConvenienceRight",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Atos Customer Termination for Convenience Requirement",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AtosCustomerTerminationForConvenienceRequirement",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Atos Customer Termination for Convenience Notice Period",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AtosCustomerTerminationForConvenienceNoticePeriod",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Atos Customer Termination for Convenience Consequences",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AtosCustomerTerminationForConvenienceConsequences",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Termination for Convenience right",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TerminationForConvenienceSectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Is offshoring permitted?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IsOffshoringPermitted",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Certifications Required?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CertificationsRequired",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Is benchmarking permitted?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IsBenchmarkingPermitted",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Is there a financial stability clause?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IsThereAFinancialStabilityClause",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Financial stability clause section reference",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinancialStabilityClauseSectionReference",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Is pricing and/or rebates linked to volume of business?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IsPricingAndOrRebatesLinkedToVolumeOfBusiness",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "What is the governing law of the agreement?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WhatIsTheGoverningLawOfTheAgreement",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "xlsxLegalReviewR",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dbcarveout",
+						"type": "DatasetReference",
+						"parameters": {
+							"Schema": "xlsx",
+							"Table": "rawLegalReviewR"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
