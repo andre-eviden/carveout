@@ -1,0 +1,101 @@
+{
+	"name": "xlsxIrisInfo",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyxlsxIrisInfo",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ExcelSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawIrisInfo;\n",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Account",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Account",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SuperIRIS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SuperIris",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "iDeal?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Ideal",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "xlsxIrisInfo",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dbcarveout",
+						"type": "DatasetReference",
+						"parameters": {
+							"Schema": "xlsx",
+							"Table": "rawIrisInfo"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
