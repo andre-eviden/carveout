@@ -480,7 +480,7 @@
 							},
 							{
 								"source": {
-									"name": "'Exceptions to consent to assign",
+									"name": "Exceptions to consent to subcontract",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -696,7 +696,7 @@
 							},
 							{
 								"source": {
-									"name": "Termination for Convenience right",
+									"name": "Atos Customer Termination for Convenience Consequences",
 									"type": "String",
 									"physicalType": "String"
 								},
