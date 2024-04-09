@@ -1,5 +1,5 @@
 {
-	"name": "xlsxWbsX",
+	"name": "xlsxWbs",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",

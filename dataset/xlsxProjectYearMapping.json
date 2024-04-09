@@ -1,5 +1,5 @@
 {
-	"name": "xlsxProjectYearMap",
+	"name": "xlsxProjectYearMapping",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",

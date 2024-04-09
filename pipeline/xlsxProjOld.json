@@ -1,0 +1,869 @@
+{
+	"name": "xlsxProjOld",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyxlsxProjOld",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ExcelSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE xlsx.rawProjOld;",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Project Definition.",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectDefinition",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectId",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisCode",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Code (New)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisCodeNew",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerId",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerName",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LE ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LeId",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LE (Inc Merged)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LeIncMerged",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Le",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Contract No.",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractNo",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Contract_LE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractLe",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Validation Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ValidationStatus",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Input in Online Mapping Workbook",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "InputInOnlineMappingWorkbook",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OOS Reason",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OosReason",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Fail Reason",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FailReason",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Fail Reason Notes",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FailReasonNotes",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Scope for Disp",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ScopeForDisp",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Include for Disp?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IncludeForDisp",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "RBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Rbu",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "GBU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Gbu",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Country_Full",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CountryFull",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Customer Industry",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalCustomerIndustry",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "IRIS Rank ('22 ER)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "IrisRank22Er",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "BDS FY22 ER (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BdsFy22Er000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "DIG FY22 ER (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DigFy22Er000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "TF FY22 ER (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TfFy22Er000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Total FY22 ER (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TotalFy22Er000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Green ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "GreenEr",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Blue ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BlueEr",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Minority ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MinorityEr",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "% of Revenue Evidian",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PercentOfRevenueEvidian",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "% of Revenue Atos",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PercentOfRevenueAtos",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Lead Business %",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LeadBusinessPercent",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "BDS FY22 PM (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BdsFy22Pm000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "DIG FY22 PM (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DigFy22Pm000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "TF FY22 PM (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TfFy22Pm000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Total FY22 PM (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TotalFy22Pm000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "BDS YTD23 ER (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BdsYtd23Er000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "DIG YTD23 ER (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DigYtd23Er000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "TF YTD23 ER (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TfYtd23Er000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Total YTD23 ER (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TotalYtd23Er000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "BDS YTD23 PM (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BdsYtd23Pm000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "DIG YTD23 PM (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DigYtd23Pm000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "TF YTD23 PM (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TfYtd23Pm000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Total YTD23 PM (000's)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TotalYtd23Pm000s",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "Top 300 Account",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Top300Account",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Proj. Scope 22",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjScope22",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Impact on LE with carveout",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ImpactOnLeWithCarveout",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Contract Disposition",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractDisposition",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Contract_LE | Industry",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ContractLeIndustry",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Count of Contract_LE | Industry",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CountOfContractLeIndustry",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Count of Contract",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CountOfContract",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Final Industry at Contract Level ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinalIndustryAtContractLevel",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Append to Refoundation Perimeter?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AppendToRefoundationPerimeter",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Post-Migration SharePoint ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PostMigrationSharePointId",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Project Year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProjectYear",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OLD_22 Total ER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Old22TotalEr",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "OLD_Mapping Change?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OldMappingChange",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Old_Validation Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OldValidationStatus",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OLD_Contract ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OldContractId",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Change in Contract ID?",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ChangeInContractId",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OLD_IRIS Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OldIrisCode",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OLD_Change1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OldChange1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OLD_LE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OldLe",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OLD_Change2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OldChange2",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "xlsxProjOld",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "dbcarveout",
+						"type": "DatasetReference",
+						"parameters": {
+							"Schema": "xlsx",
+							"Table": "rawProjOld"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
